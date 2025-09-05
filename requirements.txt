@@ -1,0 +1,7 @@
+Django>=4.2.0
+psycopg2-binary  # for PostgreSQL
+celery           # for background tasks
+redis            # for Celery broker
+djangorestframework  # for API
+python-decouple  # for environment variables
+cryptography     # for email credentials encryption

@@ -1,0 +1,11 @@
+# Environment
+tracker_env/
+
+# Database
+db.sqlite3
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
