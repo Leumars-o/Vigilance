@@ -34,6 +34,5 @@ class ManualTransaction(models.Model):
         return f"{self.account.email} - {self.transaction_type} {self.amount}"
     
     class Meta:
-        class Meta:
-            db_table = 'wallet_monitoring_manualtransaction'
-            ordering = ['-recorded_at']
+        db_table = 'wallet_monitoring_manualtransaction'
+        ordering = ['-recorded_at']

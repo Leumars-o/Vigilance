@@ -52,7 +52,7 @@ class SubmissionStatus(models.Model):
     ]
 
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
-    email_log = models.ForeignObjectRel(EmailLog, on_delete=models.CASCADE)
+    email_log = models.ForeignKey(EmailLog, on_delete=models.CASCADE)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES)
     amount = models.IntegerField(null=True, blank=True, choices=AMOUNT_CHOICES)
     submission_date = models.DateTimeField()
